@@ -36,7 +36,7 @@ The following three algorithms are implemented:
 - **Double-Sided Greedy Median - Beam (DSGM-Beam)**
 - **Double-Sided Greedy Median - Refined (DSGM-Refined)**
 
-To generate the reconstructed strand, you will need to pass the cluster of sequences as a list of strings to the respective function. we have provided a demo script ([**demo.py**](./demo.py)) that uses our nanopore sequencing dataset found in */data/our_nanopore_UnderlyingClusters.txt*. 
+To generate the reconstructed strand, you will need to pass the cluster of sequences as a list of strings to the respective function. we have provided a demo script ([**demo.py**](./demo.py)) that uses a subset of our nanopore sequencing dataset found in */data/our_nanopore_UnderlyingClusters_partial.txt*. 
 
 A reference file with the ground truth strands can also be specified to compute the accuracy and average edit distance of the reconstructed strands. The name of the output file which contains all the reconstructed strands can also be specified. Otherwise, the default output file will be *ReconstructedStrands.txt* in the */data* folder.
 
@@ -49,6 +49,12 @@ For DSGM-Beam, an additional parameter *beamsize* needs to be specified. Use the
 ```shell
 $ python3 demo.py --i $input_file --ALG $algorithm_number [--o $output_file] [--r $reference_file] --b $beamsize
 ```
+
+Here is an example run of the demo using our partial nanopore sequencing dataset and the reference file using DSGM:
+```shell
+$ python3 demo.py --i our_nanopore_UnderlyingClusters_partial.txt --ALG 0 --r our_nanopore_refs_partial.txt 
+```
+
 **Algortihm Number and Implemented Algorithms**: <br>
         0 - *DSGM* <br>
         1 - *DSGM-Beam* <br>
