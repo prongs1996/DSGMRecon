@@ -17,7 +17,7 @@ To try out DSGM, clone this repository to a directory of your choice with the co
 ```shell
 $ git clone https://github.com/prongs1996/DSGMRecon.git
 ```
-Then install the Levenshtein module
+Then install the modified Levenshtein module
 ```shell
 $ cd DSGMRecon/Levenshtein
 
