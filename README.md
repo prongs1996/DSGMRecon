@@ -26,6 +26,8 @@ $ pip install .
 $ cd ..
 ```
 
+Our implementation is built on top of the Levenshtein python module by rapidfuzz available [here](https://github.com/rapidfuzz/Levenshtein). The documentation of the Levenshtein module is available [here](https://rapidfuzz.github.io/Levenshtein/).
+
 ## Usage
 
 The following three algorithms are implemented:
