@@ -99,7 +99,7 @@ strand_length = 110
 ### Main
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('DNA consensus')
-    parser.add_argument('--i', type=str, default="our_nanopore_UnderlyingClusters.txt", help="input file")
+    parser.add_argument('--i', type=str, default="our_nanopore_UnderlyingClusters_partial.txt", help="input file")
     parser.add_argument('--r', type=str, default="",help='reference file')
     parser.add_argument('--o', type=str, default="ReconstructedStrands.txt", help="output file")
     parser.add_argument('--ALG', type=int, default=0, help="algorithm number")
